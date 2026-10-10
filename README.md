@@ -4,50 +4,59 @@
 
 ### Adaptive Uncertainty-Aware Robotic Autonomy
 
-**A ROS 2 research framework for autonomous robots that detect degraded sensing and localization and adapt their behavior before uncertainty becomes failure.**
+**A health-aware autonomous robotics framework that detects when its own sensing, perception, and localization become unreliable — and adapts before uncertainty becomes failure.**
 
-![ROS2](https://img.shields.io/badge/ROS%202-Jazzy-22314E)
-![Ubuntu](https://img.shields.io/badge/Ubuntu-24.04-E95420)
-![Gazebo](https://img.shields.io/badge/Gazebo-Harmonic-F58113)
-![Python](https://img.shields.io/badge/Python-3.12-3776AB)
-![Status](https://img.shields.io/badge/Status-In%20Development-yellow)
+<br>
+
+![ROS 2](https://img.shields.io/badge/ROS%202-Jazzy-22314E?style=for-the-badge&logo=ros)
+![Gazebo](https://img.shields.io/badge/Gazebo-Harmonic-F58113?style=for-the-badge)
+![Isaac Sim](https://img.shields.io/badge/NVIDIA-Isaac%20Sim-76B900?style=for-the-badge&logo=nvidia)
+![Python](https://img.shields.io/badge/Python-3.12-3776AB?style=for-the-badge&logo=python)
+
+<br>
+
+![Nav2](https://img.shields.io/badge/Navigation-Nav2-4C8BF5?style=flat-square)
+![RL](https://img.shields.io/badge/Reinforcement%20Learning-PPO-8A2BE2?style=flat-square)
+![Status](https://img.shields.io/badge/Status-Active%20Development-F5A623?style=flat-square)
+
+<br><br>
+
+`Gazebo` • `Isaac Sim` • `Sensor Fusion` • `Fault Injection` • `Computer Vision` • `Adaptive Control` • `Reinforcement Learning`
 
 </div>
 
 ---
 
-## Overview
+## Why AURA?
 
-Autonomous robots often assume that their sensors, perception models and localization systems remain reliable.
+Most autonomous robots answer:
 
-AURA explores a different idea:
+> **What is happening around me?**
 
-> The robot should continuously estimate how much it can trust its own autonomy stack.
+AURA adds a second question:
 
-AURA monitors LiDAR, odometry, IMU, localization and state-estimation quality, then uses that information to adapt navigation and control behavior.
+> **How much should I trust what I currently know?**
+
+AURA continuously monitors the reliability of its sensing, localization, perception, and state-estimation stack and uses that information to adapt robot behavior online.
 
 ---
 
-## System Architecture
+## System at a Glance
 
-```text
-LiDAR ────────────────┐
-                      │
-Odometry ──┐          │
-           ├── EKF ───┤
-IMU ───────┘          │
-                      ▼
-                AURA Monitor
-                      │
-                Health State
-                      │
-         ┌────────────┴────────────┐
-         ▼                         ▼
- Rule-Based Policy             PPO Policy
-         │                         │
-         └────────────┬────────────┘
-                      ▼
-                     Nav2
-                      │
-                      ▼
-                 TurtleBot3
+```mermaid
+flowchart LR
+
+    S["Sensors"] --> H["Health + Uncertainty Monitor"]
+
+    H --> R["Reliability State"]
+
+    R --> RB["Rule-Based Policy"]
+    R --> RL["PPO Policy"]
+
+    RB --> A["Adaptive Decision Layer"]
+    RL --> A
+
+    A --> N["Nav2"]
+    N --> ROBOT["Robot"]
+
+    ROBOT --> S
