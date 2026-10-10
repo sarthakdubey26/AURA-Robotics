@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>AURA | Adaptive Robotic Autonomy</title>
+
+<style>
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background: #070a11;
+    color: white;
+}
+
+.hero {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+
+    background:
+        radial-gradient(circle at 20% 25%, #173b78, transparent 40%),
+        radial-gradient(circle at 80% 75%, #145044, transparent 40%),
+        #070a11;
+}
+
+.hero-content {
+    animation: fadeUp 1.4s ease;
+}
+
+.hero h1 {
+    font-size: clamp(5rem, 15vw, 10rem);
+    margin: 0;
+    letter-spacing: 18px;
+}
+
+.hero h2 {
+    font-weight: 400;
+    color: #bcc6d8;
+}
+
+.hero p {
+    max-width: 760px;
+    margin: 30px auto;
+    color: #8d99ad;
+    line-height: 1.8;
+    font-size: 1.1rem;
+}
+
+@keyframes fadeUp {
+    from {
+        opacity: 0;
+        transform: translateY(45px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+section {
+    max-width: 1150px;
+    margin: auto;
+    padding: 100px 30px;
+}
+
+h2 {
+    font-size: 2.5rem;
+}
+
+.pipeline {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin-top: 50px;
+}
+
+.node {
+    min-width: 160px;
+    padding: 30px 20px;
+    background: #101622;
+    border: 1px solid #293a56;
+    border-radius: 15px;
+    transition: 0.3s;
+    text-align: center;
+}
+
+.node:hover {
+    transform: translateY(-10px);
+    border-color: #6e9fff;
+}
+
+.arrow {
+    font-size: 2rem;
+    animation: pulse 1.4s infinite;
+}
+
+@keyframes pulse {
+    0%, 100% {
+        opacity: 0.25;
+    }
+
+    50% {
+        opacity: 1;
+    }
+}
+
+.progress-bg {
+    background: #171d29;
+    border-radius: 50px;
+    overflow: hidden;
+    margin-top: 35px;
+}
+
+.progress {
+    width: 30%;
+    padding: 13px;
+    text-align: center;
+    background: linear-gradient(90deg, #527cff, #4fc4a3);
+    animation: load 2s ease;
+}
+
+@keyframes load {
+    from {
+        width: 0;
+    }
+
+    to {
+        width: 30%;
+    }
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+    gap: 25px;
+}
+
+.card {
+    background: #101622;
+    border: 1px solid #24324a;
+    border-radius: 15px;
+    padding: 30px;
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-8px);
+}
+
+.card p {
+    color: #8e9aae;
+    line-height: 1.7;
+}
+
+footer {
+    text-align: center;
+    padding: 70px 20px;
+    color: #69758b;
+}
+</style>
+
+</head>
+
+<body>
+
+<div class="hero">
+    <div class="hero-content">
+
+        <h1>AURA</h1>
+
+        <h2>Adaptive Uncertainty-Aware Robotic Autonomy</h2>
+
+        <p>
+        A ROS 2 research platform exploring how autonomous robots
+        can detect degraded sensing, perception and localization,
+        then adapt before uncertainty becomes failure.
+        </p>
+
+    </div>
+</div>
+
+<section>
+
+<h2>Autonomy Pipeline</h2>
+
+<div class="pipeline">
+    <div class="node">Sensors</div>
+    <div class="arrow">→</div>
+    <div class="node">Health Monitor</div>
+    <div class="arrow">→</div>
+    <div class="node">Adaptive Policy</div>
+    <div class="arrow">→</div>
+    <div class="node">Nav2</div>
+    <div class="arrow">→</div>
+    <div class="node">Robot</div>
+</div>
+
+</section>
+
+<section>
+
+<h2>Development Progress</h2>
+
+<p>AURA is currently under active development.</p>
+
+<div class="progress-bg">
+    <div class="progress">30%</div>
+</div>
+
+</section>
+
+<section>
+
+<h2>AURA Modules</h2>
+
+<div class="cards">
+
+<div class="card">
+<h3>Health Monitoring</h3>
+<p>
+Monitors sensor freshness, state-estimation disagreement
+and localization reliability.
+</p>
+</div>
+
+<div class="card">
+<h3>Fault Injection</h3>
+<p>
+Introduces controlled LiDAR, IMU, odometry
+and perception failures.
+</p>
+</div>
+
+<div class="card">
+<h3>Adaptive Control</h3>
+<p>
+Changes robot behavior according to the health
+of the autonomy stack.
+</p>
+</div>
+
+<div class="card">
+<h3>Reinforcement Learning</h3>
+<p>
+Uses PPO to learn when to trade speed,
+accuracy and compute cost for safety.
+</p>
+</div>
+
+</div>
+
+</section>
+
+<section>
+
+<h2>Research Goal</h2>
+
+<p style="font-size:1.3rem; line-height:1.8; color:#b5c0d2;">
+
+Can an autonomous robot detect when its own sensing and
+state-estimation systems become unreliable and adapt early
+enough to continue navigating safely?
+
+</p>
+
+</section>
+
+<footer>
+AURA · Sarthak Dubey · 2026
+</footer>
+
+</body>
+</html>
