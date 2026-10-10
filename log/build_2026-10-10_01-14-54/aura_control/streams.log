@@ -1,0 +1,15 @@
+[1.619s] Invoking command in '/home/sarthak/aura_ws/build/aura_control': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/sarthak/aura_ws/build/aura_control/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/sarthak/aura_ws/install/aura_control/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/sarthak/aura_ws/build/aura_control/build --no-deps symlink_data
+[1.873s] running develop
+[2.026s] running egg_info
+[2.042s] writing aura_control.egg-info/PKG-INFO
+[2.043s] writing dependency_links to aura_control.egg-info/dependency_links.txt
+[2.043s] writing requirements to aura_control.egg-info/requires.txt
+[2.043s] writing top-level names to aura_control.egg-info/top_level.txt
+[2.068s] reading manifest file 'aura_control.egg-info/SOURCES.txt'
+[2.069s] writing manifest file 'aura_control.egg-info/SOURCES.txt'
+[2.085s] running build_ext
+[2.085s] Creating /home/sarthak/aura_ws/install/aura_control/lib/python3.12/site-packages/aura-control.egg-link (link to .)
+[2.085s] 
+[2.085s] Installed /home/sarthak/aura_ws/build/aura_control
+[2.086s] running symlink_data
+[2.175s] Invoked command in '/home/sarthak/aura_ws/build/aura_control' returned '0': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/sarthak/aura_ws/build/aura_control/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/sarthak/aura_ws/install/aura_control/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/sarthak/aura_ws/build/aura_control/build --no-deps symlink_data

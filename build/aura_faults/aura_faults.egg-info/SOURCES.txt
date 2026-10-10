@@ -1,0 +1,11 @@
+package.xml
+setup.cfg
+setup.py
+aura_faults/__init__.py
+aura_faults.egg-info/PKG-INFO
+aura_faults.egg-info/SOURCES.txt
+aura_faults.egg-info/dependency_links.txt
+aura_faults.egg-info/requires.txt
+aura_faults.egg-info/top_level.txt
+aura_faults.egg-info/zip-safe
+resource/aura_faults

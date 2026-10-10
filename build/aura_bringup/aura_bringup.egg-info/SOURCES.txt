@@ -1,0 +1,11 @@
+package.xml
+setup.cfg
+setup.py
+aura_bringup/__init__.py
+aura_bringup.egg-info/PKG-INFO
+aura_bringup.egg-info/SOURCES.txt
+aura_bringup.egg-info/dependency_links.txt
+aura_bringup.egg-info/requires.txt
+aura_bringup.egg-info/top_level.txt
+aura_bringup.egg-info/zip-safe
+resource/aura_bringup

@@ -1,0 +1,22 @@
+[2.084s] Invoking command in '/home/sarthak/aura_ws/build/aura_faults': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/sarthak/aura_ws/build/aura_faults/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/sarthak/aura_ws/install/aura_faults/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/sarthak/aura_ws/build/aura_faults/build --no-deps symlink_data
+[2.385s] running develop
+[2.540s] running egg_info
+[2.540s] creating aura_faults.egg-info
+[2.560s] writing aura_faults.egg-info/PKG-INFO
+[2.560s] writing dependency_links to aura_faults.egg-info/dependency_links.txt
+[2.560s] writing requirements to aura_faults.egg-info/requires.txt
+[2.560s] writing top-level names to aura_faults.egg-info/top_level.txt
+[2.560s] writing manifest file 'aura_faults.egg-info/SOURCES.txt'
+[2.588s] reading manifest file 'aura_faults.egg-info/SOURCES.txt'
+[2.588s] writing manifest file 'aura_faults.egg-info/SOURCES.txt'
+[2.607s] running build_ext
+[2.607s] Creating /home/sarthak/aura_ws/install/aura_faults/lib/python3.12/site-packages/aura-faults.egg-link (link to .)
+[2.608s] 
+[2.608s] Installed /home/sarthak/aura_ws/build/aura_faults
+[2.608s] running symlink_data
+[2.608s] creating /home/sarthak/aura_ws/install/aura_faults/share/ament_index
+[2.608s] creating /home/sarthak/aura_ws/install/aura_faults/share/ament_index/resource_index
+[2.608s] creating /home/sarthak/aura_ws/install/aura_faults/share/ament_index/resource_index/packages
+[2.608s] symbolically linking /home/sarthak/aura_ws/build/aura_faults/resource/aura_faults -> /home/sarthak/aura_ws/install/aura_faults/share/ament_index/resource_index/packages
+[2.608s] symbolically linking /home/sarthak/aura_ws/build/aura_faults/package.xml -> /home/sarthak/aura_ws/install/aura_faults/share/aura_faults
+[2.635s] Invoked command in '/home/sarthak/aura_ws/build/aura_faults' returned '0': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/sarthak/aura_ws/build/aura_faults/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/sarthak/aura_ws/install/aura_faults/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/sarthak/aura_ws/build/aura_faults/build --no-deps symlink_data

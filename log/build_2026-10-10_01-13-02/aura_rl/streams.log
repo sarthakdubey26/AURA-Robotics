@@ -1,0 +1,22 @@
+[2.040s] Invoking command in '/home/sarthak/aura_ws/build/aura_rl': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/sarthak/aura_ws/build/aura_rl/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/sarthak/aura_ws/install/aura_rl/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/sarthak/aura_ws/build/aura_rl/build --no-deps symlink_data
+[2.344s] running develop
+[2.494s] running egg_info
+[2.494s] creating aura_rl.egg-info
+[2.504s] writing aura_rl.egg-info/PKG-INFO
+[2.504s] writing dependency_links to aura_rl.egg-info/dependency_links.txt
+[2.504s] writing requirements to aura_rl.egg-info/requires.txt
+[2.505s] writing top-level names to aura_rl.egg-info/top_level.txt
+[2.505s] writing manifest file 'aura_rl.egg-info/SOURCES.txt'
+[2.549s] reading manifest file 'aura_rl.egg-info/SOURCES.txt'
+[2.549s] writing manifest file 'aura_rl.egg-info/SOURCES.txt'
+[2.553s] running build_ext
+[2.553s] Creating /home/sarthak/aura_ws/install/aura_rl/lib/python3.12/site-packages/aura-rl.egg-link (link to .)
+[2.553s] 
+[2.553s] Installed /home/sarthak/aura_ws/build/aura_rl
+[2.553s] running symlink_data
+[2.554s] creating /home/sarthak/aura_ws/install/aura_rl/share/ament_index
+[2.554s] creating /home/sarthak/aura_ws/install/aura_rl/share/ament_index/resource_index
+[2.554s] creating /home/sarthak/aura_ws/install/aura_rl/share/ament_index/resource_index/packages
+[2.554s] symbolically linking /home/sarthak/aura_ws/build/aura_rl/resource/aura_rl -> /home/sarthak/aura_ws/install/aura_rl/share/ament_index/resource_index/packages
+[2.554s] symbolically linking /home/sarthak/aura_ws/build/aura_rl/package.xml -> /home/sarthak/aura_ws/install/aura_rl/share/aura_rl
+[2.589s] Invoked command in '/home/sarthak/aura_ws/build/aura_rl' returned '0': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/sarthak/aura_ws/build/aura_rl/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/sarthak/aura_ws/install/aura_rl/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/sarthak/aura_ws/build/aura_rl/build --no-deps symlink_data

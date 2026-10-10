@@ -1,0 +1,22 @@
+[2.110s] Invoking command in '/home/sarthak/aura_ws/build/aura_bringup': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/sarthak/aura_ws/build/aura_bringup/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/sarthak/aura_ws/install/aura_bringup/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/sarthak/aura_ws/build/aura_bringup/build --no-deps symlink_data
+[2.411s] running develop
+[2.535s] running egg_info
+[2.535s] creating aura_bringup.egg-info
+[2.545s] writing aura_bringup.egg-info/PKG-INFO
+[2.545s] writing dependency_links to aura_bringup.egg-info/dependency_links.txt
+[2.545s] writing requirements to aura_bringup.egg-info/requires.txt
+[2.545s] writing top-level names to aura_bringup.egg-info/top_level.txt
+[2.545s] writing manifest file 'aura_bringup.egg-info/SOURCES.txt'
+[2.558s] reading manifest file 'aura_bringup.egg-info/SOURCES.txt'
+[2.559s] writing manifest file 'aura_bringup.egg-info/SOURCES.txt'
+[2.576s] running build_ext
+[2.576s] Creating /home/sarthak/aura_ws/install/aura_bringup/lib/python3.12/site-packages/aura-bringup.egg-link (link to .)
+[2.576s] 
+[2.576s] Installed /home/sarthak/aura_ws/build/aura_bringup
+[2.576s] running symlink_data
+[2.576s] creating /home/sarthak/aura_ws/install/aura_bringup/share/ament_index
+[2.576s] creating /home/sarthak/aura_ws/install/aura_bringup/share/ament_index/resource_index
+[2.576s] creating /home/sarthak/aura_ws/install/aura_bringup/share/ament_index/resource_index/packages
+[2.589s] symbolically linking /home/sarthak/aura_ws/build/aura_bringup/resource/aura_bringup -> /home/sarthak/aura_ws/install/aura_bringup/share/ament_index/resource_index/packages
+[2.590s] symbolically linking /home/sarthak/aura_ws/build/aura_bringup/package.xml -> /home/sarthak/aura_ws/install/aura_bringup/share/aura_bringup
+[2.620s] Invoked command in '/home/sarthak/aura_ws/build/aura_bringup' returned '0': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/sarthak/aura_ws/build/aura_bringup/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/sarthak/aura_ws/install/aura_bringup/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/sarthak/aura_ws/build/aura_bringup/build --no-deps symlink_data

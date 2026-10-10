@@ -1,0 +1,9 @@
+source;share/aura_rl/hook/pythonpath.ps1
+source;share/aura_rl/hook/pythonpath.dsv
+source;share/aura_rl/hook/pythonpath.sh
+source;share/aura_rl/hook/ament_prefix_path.ps1
+source;share/aura_rl/hook/ament_prefix_path.dsv
+source;share/aura_rl/hook/ament_prefix_path.sh
+source;../../build/aura_rl/share/aura_rl/hook/pythonpath_develop.ps1
+source;../../build/aura_rl/share/aura_rl/hook/pythonpath_develop.dsv
+source;../../build/aura_rl/share/aura_rl/hook/pythonpath_develop.sh

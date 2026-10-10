@@ -1,0 +1,15 @@
+[1.576s] Invoking command in '/home/sarthak/aura_ws/build/aura_perception': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/sarthak/aura_ws/build/aura_perception/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/sarthak/aura_ws/install/aura_perception/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/sarthak/aura_ws/build/aura_perception/build --no-deps symlink_data
+[1.857s] running develop
+[2.040s] running egg_info
+[2.050s] writing aura_perception.egg-info/PKG-INFO
+[2.050s] writing dependency_links to aura_perception.egg-info/dependency_links.txt
+[2.052s] writing requirements to aura_perception.egg-info/requires.txt
+[2.053s] writing top-level names to aura_perception.egg-info/top_level.txt
+[2.069s] reading manifest file 'aura_perception.egg-info/SOURCES.txt'
+[2.069s] writing manifest file 'aura_perception.egg-info/SOURCES.txt'
+[2.086s] running build_ext
+[2.086s] Creating /home/sarthak/aura_ws/install/aura_perception/lib/python3.12/site-packages/aura-perception.egg-link (link to .)
+[2.087s] 
+[2.087s] Installed /home/sarthak/aura_ws/build/aura_perception
+[2.087s] running symlink_data
+[2.150s] Invoked command in '/home/sarthak/aura_ws/build/aura_perception' returned '0': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/sarthak/aura_ws/build/aura_perception/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/sarthak/aura_ws/install/aura_perception/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/sarthak/aura_ws/build/aura_perception/build --no-deps symlink_data

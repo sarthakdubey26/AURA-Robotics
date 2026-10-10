@@ -1,0 +1,2 @@
+[console_scripts]
+health_monitor = aura_monitor.health_monitor:main

@@ -1,0 +1,20 @@
+running develop
+running egg_info
+creating aura_faults.egg-info
+writing aura_faults.egg-info/PKG-INFO
+writing dependency_links to aura_faults.egg-info/dependency_links.txt
+writing requirements to aura_faults.egg-info/requires.txt
+writing top-level names to aura_faults.egg-info/top_level.txt
+writing manifest file 'aura_faults.egg-info/SOURCES.txt'
+reading manifest file 'aura_faults.egg-info/SOURCES.txt'
+writing manifest file 'aura_faults.egg-info/SOURCES.txt'
+running build_ext
+Creating /home/sarthak/aura_ws/install/aura_faults/lib/python3.12/site-packages/aura-faults.egg-link (link to .)
+
+Installed /home/sarthak/aura_ws/build/aura_faults
+running symlink_data
+creating /home/sarthak/aura_ws/install/aura_faults/share/ament_index
+creating /home/sarthak/aura_ws/install/aura_faults/share/ament_index/resource_index
+creating /home/sarthak/aura_ws/install/aura_faults/share/ament_index/resource_index/packages
+symbolically linking /home/sarthak/aura_ws/build/aura_faults/resource/aura_faults -> /home/sarthak/aura_ws/install/aura_faults/share/ament_index/resource_index/packages
+symbolically linking /home/sarthak/aura_ws/build/aura_faults/package.xml -> /home/sarthak/aura_ws/install/aura_faults/share/aura_faults

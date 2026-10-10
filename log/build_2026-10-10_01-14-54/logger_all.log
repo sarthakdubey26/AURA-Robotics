@@ -1,0 +1,413 @@
+[0.086s] DEBUG:colcon:Command line arguments: ['/usr/bin/colcon', 'build', '--symlink-install']
+[0.086s] DEBUG:colcon:Parsed command line arguments: Namespace(log_base=None, log_level=None, verb_name='build', build_base='build', install_base='install', merge_install=False, symlink_install=True, test_result_base=None, continue_on_error=False, executor='parallel', parallel_workers=12, event_handlers=None, ignore_user_meta=False, metas=['./colcon.meta'], base_paths=['.'], packages_ignore=None, packages_ignore_regex=None, paths=None, packages_up_to=None, packages_up_to_regex=None, packages_above=None, packages_above_and_dependencies=None, packages_above_depth=None, packages_select_by_dep=None, packages_skip_by_dep=None, packages_skip_up_to=None, packages_select_build_failed=False, packages_skip_build_finished=False, packages_select_test_failures=False, packages_skip_test_passed=False, packages_select=None, packages_skip=None, packages_select_regex=None, packages_skip_regex=None, packages_start=None, packages_end=None, allow_overriding=[], cmake_args=None, cmake_target=None, cmake_target_skip_unavailable=False, cmake_clean_cache=False, cmake_clean_first=False, cmake_force_configure=False, ament_cmake_args=None, catkin_cmake_args=None, catkin_skip_building_tests=False, mixin_files=None, mixin=None, verb_parser=<colcon_mixin.mixin.mixin_argument.MixinArgumentDecorator object at 0xf055ef04a750>, verb_extension=<colcon_core.verb.build.BuildVerb object at 0xf055ef1c7170>, main=<bound method BuildVerb.main of <colcon_core.verb.build.BuildVerb object at 0xf055ef1c7170>>, mixin_verb=('build',))
+[0.114s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) check parameters
+[0.114s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) check parameters
+[0.114s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) check parameters
+[0.114s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) check parameters
+[0.114s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) discover
+[0.114s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) discover
+[0.114s] INFO:colcon.colcon_core.package_discovery:Crawling recursively for packages in '/home/sarthak/aura_ws'
+[0.114s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ignore', 'ignore_ament_install']
+[0.114s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore'
+[0.114s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore_ament_install'
+[0.114s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_pkg']
+[0.114s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_pkg'
+[0.114s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_meta']
+[0.114s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_meta'
+[0.114s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ros']
+[0.114s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ros'
+[0.130s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['cmake', 'python']
+[0.130s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'cmake'
+[0.130s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python'
+[0.130s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['python_setup_py']
+[0.130s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python_setup_py'
+[0.130s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extensions ['ignore', 'ignore_ament_install']
+[0.130s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extension 'ignore'
+[0.130s] Level 1:colcon.colcon_core.package_identification:_identify(build) ignored
+[0.130s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extensions ['ignore', 'ignore_ament_install']
+[0.130s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extension 'ignore'
+[0.130s] Level 1:colcon.colcon_core.package_identification:_identify(install) ignored
+[0.130s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extensions ['ignore', 'ignore_ament_install']
+[0.130s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extension 'ignore'
+[0.130s] Level 1:colcon.colcon_core.package_identification:_identify(log) ignored
+[0.130s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ignore', 'ignore_ament_install']
+[0.130s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore'
+[0.130s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore_ament_install'
+[0.130s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_pkg']
+[0.130s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_pkg'
+[0.130s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_meta']
+[0.130s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_meta'
+[0.130s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ros']
+[0.130s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ros'
+[0.130s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['cmake', 'python']
+[0.130s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'cmake'
+[0.130s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python'
+[0.130s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['python_setup_py']
+[0.130s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python_setup_py'
+[0.130s] Level 1:colcon.colcon_core.package_identification:_identify(src/aura_bringup) by extensions ['ignore', 'ignore_ament_install']
+[0.130s] Level 1:colcon.colcon_core.package_identification:_identify(src/aura_bringup) by extension 'ignore'
+[0.130s] Level 1:colcon.colcon_core.package_identification:_identify(src/aura_bringup) by extension 'ignore_ament_install'
+[0.130s] Level 1:colcon.colcon_core.package_identification:_identify(src/aura_bringup) by extensions ['colcon_pkg']
+[0.130s] Level 1:colcon.colcon_core.package_identification:_identify(src/aura_bringup) by extension 'colcon_pkg'
+[0.130s] Level 1:colcon.colcon_core.package_identification:_identify(src/aura_bringup) by extensions ['colcon_meta']
+[0.130s] Level 1:colcon.colcon_core.package_identification:_identify(src/aura_bringup) by extension 'colcon_meta'
+[0.130s] Level 1:colcon.colcon_core.package_identification:_identify(src/aura_bringup) by extensions ['ros']
+[0.130s] Level 1:colcon.colcon_core.package_identification:_identify(src/aura_bringup) by extension 'ros'
+[0.132s] DEBUG:colcon.colcon_core.package_identification:Package 'src/aura_bringup' with type 'ros.ament_python' and name 'aura_bringup'
+[0.133s] Level 1:colcon.colcon_core.package_identification:_identify(src/aura_control) by extensions ['ignore', 'ignore_ament_install']
+[0.133s] Level 1:colcon.colcon_core.package_identification:_identify(src/aura_control) by extension 'ignore'
+[0.133s] Level 1:colcon.colcon_core.package_identification:_identify(src/aura_control) by extension 'ignore_ament_install'
+[0.133s] Level 1:colcon.colcon_core.package_identification:_identify(src/aura_control) by extensions ['colcon_pkg']
+[0.133s] Level 1:colcon.colcon_core.package_identification:_identify(src/aura_control) by extension 'colcon_pkg'
+[0.133s] Level 1:colcon.colcon_core.package_identification:_identify(src/aura_control) by extensions ['colcon_meta']
+[0.133s] Level 1:colcon.colcon_core.package_identification:_identify(src/aura_control) by extension 'colcon_meta'
+[0.133s] Level 1:colcon.colcon_core.package_identification:_identify(src/aura_control) by extensions ['ros']
+[0.133s] Level 1:colcon.colcon_core.package_identification:_identify(src/aura_control) by extension 'ros'
+[0.133s] DEBUG:colcon.colcon_core.package_identification:Package 'src/aura_control' with type 'ros.ament_python' and name 'aura_control'
+[0.133s] Level 1:colcon.colcon_core.package_identification:_identify(src/aura_faults) by extensions ['ignore', 'ignore_ament_install']
+[0.133s] Level 1:colcon.colcon_core.package_identification:_identify(src/aura_faults) by extension 'ignore'
+[0.133s] Level 1:colcon.colcon_core.package_identification:_identify(src/aura_faults) by extension 'ignore_ament_install'
+[0.133s] Level 1:colcon.colcon_core.package_identification:_identify(src/aura_faults) by extensions ['colcon_pkg']
+[0.133s] Level 1:colcon.colcon_core.package_identification:_identify(src/aura_faults) by extension 'colcon_pkg'
+[0.133s] Level 1:colcon.colcon_core.package_identification:_identify(src/aura_faults) by extensions ['colcon_meta']
+[0.133s] Level 1:colcon.colcon_core.package_identification:_identify(src/aura_faults) by extension 'colcon_meta'
+[0.133s] Level 1:colcon.colcon_core.package_identification:_identify(src/aura_faults) by extensions ['ros']
+[0.133s] Level 1:colcon.colcon_core.package_identification:_identify(src/aura_faults) by extension 'ros'
+[0.133s] DEBUG:colcon.colcon_core.package_identification:Package 'src/aura_faults' with type 'ros.ament_python' and name 'aura_faults'
+[0.133s] Level 1:colcon.colcon_core.package_identification:_identify(src/aura_monitor) by extensions ['ignore', 'ignore_ament_install']
+[0.133s] Level 1:colcon.colcon_core.package_identification:_identify(src/aura_monitor) by extension 'ignore'
+[0.133s] Level 1:colcon.colcon_core.package_identification:_identify(src/aura_monitor) by extension 'ignore_ament_install'
+[0.133s] Level 1:colcon.colcon_core.package_identification:_identify(src/aura_monitor) by extensions ['colcon_pkg']
+[0.133s] Level 1:colcon.colcon_core.package_identification:_identify(src/aura_monitor) by extension 'colcon_pkg'
+[0.134s] Level 1:colcon.colcon_core.package_identification:_identify(src/aura_monitor) by extensions ['colcon_meta']
+[0.134s] Level 1:colcon.colcon_core.package_identification:_identify(src/aura_monitor) by extension 'colcon_meta'
+[0.134s] Level 1:colcon.colcon_core.package_identification:_identify(src/aura_monitor) by extensions ['ros']
+[0.134s] Level 1:colcon.colcon_core.package_identification:_identify(src/aura_monitor) by extension 'ros'
+[0.134s] DEBUG:colcon.colcon_core.package_identification:Package 'src/aura_monitor' with type 'ros.ament_python' and name 'aura_monitor'
+[0.134s] Level 1:colcon.colcon_core.package_identification:_identify(src/aura_perception) by extensions ['ignore', 'ignore_ament_install']
+[0.134s] Level 1:colcon.colcon_core.package_identification:_identify(src/aura_perception) by extension 'ignore'
+[0.134s] Level 1:colcon.colcon_core.package_identification:_identify(src/aura_perception) by extension 'ignore_ament_install'
+[0.134s] Level 1:colcon.colcon_core.package_identification:_identify(src/aura_perception) by extensions ['colcon_pkg']
+[0.134s] Level 1:colcon.colcon_core.package_identification:_identify(src/aura_perception) by extension 'colcon_pkg'
+[0.134s] Level 1:colcon.colcon_core.package_identification:_identify(src/aura_perception) by extensions ['colcon_meta']
+[0.134s] Level 1:colcon.colcon_core.package_identification:_identify(src/aura_perception) by extension 'colcon_meta'
+[0.134s] Level 1:colcon.colcon_core.package_identification:_identify(src/aura_perception) by extensions ['ros']
+[0.134s] Level 1:colcon.colcon_core.package_identification:_identify(src/aura_perception) by extension 'ros'
+[0.134s] DEBUG:colcon.colcon_core.package_identification:Package 'src/aura_perception' with type 'ros.ament_python' and name 'aura_perception'
+[0.134s] Level 1:colcon.colcon_core.package_identification:_identify(src/aura_rl) by extensions ['ignore', 'ignore_ament_install']
+[0.134s] Level 1:colcon.colcon_core.package_identification:_identify(src/aura_rl) by extension 'ignore'
+[0.134s] Level 1:colcon.colcon_core.package_identification:_identify(src/aura_rl) by extension 'ignore_ament_install'
+[0.134s] Level 1:colcon.colcon_core.package_identification:_identify(src/aura_rl) by extensions ['colcon_pkg']
+[0.134s] Level 1:colcon.colcon_core.package_identification:_identify(src/aura_rl) by extension 'colcon_pkg'
+[0.134s] Level 1:colcon.colcon_core.package_identification:_identify(src/aura_rl) by extensions ['colcon_meta']
+[0.134s] Level 1:colcon.colcon_core.package_identification:_identify(src/aura_rl) by extension 'colcon_meta'
+[0.134s] Level 1:colcon.colcon_core.package_identification:_identify(src/aura_rl) by extensions ['ros']
+[0.134s] Level 1:colcon.colcon_core.package_identification:_identify(src/aura_rl) by extension 'ros'
+[0.135s] DEBUG:colcon.colcon_core.package_identification:Package 'src/aura_rl' with type 'ros.ament_python' and name 'aura_rl'
+[0.135s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) using defaults
+[0.135s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) discover
+[0.135s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) using defaults
+[0.135s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) discover
+[0.135s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) using defaults
+[0.146s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) check parameters
+[0.146s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) discover
+[0.148s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 6 installed packages in /home/sarthak/aura_ws/install
+[0.149s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 391 installed packages in /opt/ros/jazzy
+[0.149s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) using defaults
+[0.180s] Level 5:colcon.colcon_core.verb:set package 'aura_bringup' build argument 'cmake_args' from command line to 'None'
+[0.180s] Level 5:colcon.colcon_core.verb:set package 'aura_bringup' build argument 'cmake_target' from command line to 'None'
+[0.180s] Level 5:colcon.colcon_core.verb:set package 'aura_bringup' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.180s] Level 5:colcon.colcon_core.verb:set package 'aura_bringup' build argument 'cmake_clean_cache' from command line to 'False'
+[0.180s] Level 5:colcon.colcon_core.verb:set package 'aura_bringup' build argument 'cmake_clean_first' from command line to 'False'
+[0.180s] Level 5:colcon.colcon_core.verb:set package 'aura_bringup' build argument 'cmake_force_configure' from command line to 'False'
+[0.180s] Level 5:colcon.colcon_core.verb:set package 'aura_bringup' build argument 'ament_cmake_args' from command line to 'None'
+[0.180s] Level 5:colcon.colcon_core.verb:set package 'aura_bringup' build argument 'catkin_cmake_args' from command line to 'None'
+[0.180s] Level 5:colcon.colcon_core.verb:set package 'aura_bringup' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.180s] DEBUG:colcon.colcon_core.verb:Building package 'aura_bringup' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/sarthak/aura_ws/build/aura_bringup', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/sarthak/aura_ws/install/aura_bringup', 'merge_install': False, 'path': '/home/sarthak/aura_ws/src/aura_bringup', 'symlink_install': True, 'test_result_base': None}
+[0.180s] Level 5:colcon.colcon_core.verb:set package 'aura_control' build argument 'cmake_args' from command line to 'None'
+[0.180s] Level 5:colcon.colcon_core.verb:set package 'aura_control' build argument 'cmake_target' from command line to 'None'
+[0.180s] Level 5:colcon.colcon_core.verb:set package 'aura_control' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.180s] Level 5:colcon.colcon_core.verb:set package 'aura_control' build argument 'cmake_clean_cache' from command line to 'False'
+[0.180s] Level 5:colcon.colcon_core.verb:set package 'aura_control' build argument 'cmake_clean_first' from command line to 'False'
+[0.180s] Level 5:colcon.colcon_core.verb:set package 'aura_control' build argument 'cmake_force_configure' from command line to 'False'
+[0.180s] Level 5:colcon.colcon_core.verb:set package 'aura_control' build argument 'ament_cmake_args' from command line to 'None'
+[0.180s] Level 5:colcon.colcon_core.verb:set package 'aura_control' build argument 'catkin_cmake_args' from command line to 'None'
+[0.180s] Level 5:colcon.colcon_core.verb:set package 'aura_control' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.180s] DEBUG:colcon.colcon_core.verb:Building package 'aura_control' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/sarthak/aura_ws/build/aura_control', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/sarthak/aura_ws/install/aura_control', 'merge_install': False, 'path': '/home/sarthak/aura_ws/src/aura_control', 'symlink_install': True, 'test_result_base': None}
+[0.180s] Level 5:colcon.colcon_core.verb:set package 'aura_faults' build argument 'cmake_args' from command line to 'None'
+[0.180s] Level 5:colcon.colcon_core.verb:set package 'aura_faults' build argument 'cmake_target' from command line to 'None'
+[0.180s] Level 5:colcon.colcon_core.verb:set package 'aura_faults' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.180s] Level 5:colcon.colcon_core.verb:set package 'aura_faults' build argument 'cmake_clean_cache' from command line to 'False'
+[0.180s] Level 5:colcon.colcon_core.verb:set package 'aura_faults' build argument 'cmake_clean_first' from command line to 'False'
+[0.180s] Level 5:colcon.colcon_core.verb:set package 'aura_faults' build argument 'cmake_force_configure' from command line to 'False'
+[0.180s] Level 5:colcon.colcon_core.verb:set package 'aura_faults' build argument 'ament_cmake_args' from command line to 'None'
+[0.180s] Level 5:colcon.colcon_core.verb:set package 'aura_faults' build argument 'catkin_cmake_args' from command line to 'None'
+[0.180s] Level 5:colcon.colcon_core.verb:set package 'aura_faults' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.180s] DEBUG:colcon.colcon_core.verb:Building package 'aura_faults' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/sarthak/aura_ws/build/aura_faults', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/sarthak/aura_ws/install/aura_faults', 'merge_install': False, 'path': '/home/sarthak/aura_ws/src/aura_faults', 'symlink_install': True, 'test_result_base': None}
+[0.180s] Level 5:colcon.colcon_core.verb:set package 'aura_monitor' build argument 'cmake_args' from command line to 'None'
+[0.181s] Level 5:colcon.colcon_core.verb:set package 'aura_monitor' build argument 'cmake_target' from command line to 'None'
+[0.181s] Level 5:colcon.colcon_core.verb:set package 'aura_monitor' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.181s] Level 5:colcon.colcon_core.verb:set package 'aura_monitor' build argument 'cmake_clean_cache' from command line to 'False'
+[0.181s] Level 5:colcon.colcon_core.verb:set package 'aura_monitor' build argument 'cmake_clean_first' from command line to 'False'
+[0.181s] Level 5:colcon.colcon_core.verb:set package 'aura_monitor' build argument 'cmake_force_configure' from command line to 'False'
+[0.181s] Level 5:colcon.colcon_core.verb:set package 'aura_monitor' build argument 'ament_cmake_args' from command line to 'None'
+[0.181s] Level 5:colcon.colcon_core.verb:set package 'aura_monitor' build argument 'catkin_cmake_args' from command line to 'None'
+[0.181s] Level 5:colcon.colcon_core.verb:set package 'aura_monitor' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.181s] DEBUG:colcon.colcon_core.verb:Building package 'aura_monitor' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/sarthak/aura_ws/build/aura_monitor', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/sarthak/aura_ws/install/aura_monitor', 'merge_install': False, 'path': '/home/sarthak/aura_ws/src/aura_monitor', 'symlink_install': True, 'test_result_base': None}
+[0.181s] Level 5:colcon.colcon_core.verb:set package 'aura_perception' build argument 'cmake_args' from command line to 'None'
+[0.181s] Level 5:colcon.colcon_core.verb:set package 'aura_perception' build argument 'cmake_target' from command line to 'None'
+[0.181s] Level 5:colcon.colcon_core.verb:set package 'aura_perception' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.181s] Level 5:colcon.colcon_core.verb:set package 'aura_perception' build argument 'cmake_clean_cache' from command line to 'False'
+[0.181s] Level 5:colcon.colcon_core.verb:set package 'aura_perception' build argument 'cmake_clean_first' from command line to 'False'
+[0.181s] Level 5:colcon.colcon_core.verb:set package 'aura_perception' build argument 'cmake_force_configure' from command line to 'False'
+[0.181s] Level 5:colcon.colcon_core.verb:set package 'aura_perception' build argument 'ament_cmake_args' from command line to 'None'
+[0.181s] Level 5:colcon.colcon_core.verb:set package 'aura_perception' build argument 'catkin_cmake_args' from command line to 'None'
+[0.181s] Level 5:colcon.colcon_core.verb:set package 'aura_perception' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.181s] DEBUG:colcon.colcon_core.verb:Building package 'aura_perception' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/sarthak/aura_ws/build/aura_perception', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/sarthak/aura_ws/install/aura_perception', 'merge_install': False, 'path': '/home/sarthak/aura_ws/src/aura_perception', 'symlink_install': True, 'test_result_base': None}
+[0.181s] Level 5:colcon.colcon_core.verb:set package 'aura_rl' build argument 'cmake_args' from command line to 'None'
+[0.181s] Level 5:colcon.colcon_core.verb:set package 'aura_rl' build argument 'cmake_target' from command line to 'None'
+[0.181s] Level 5:colcon.colcon_core.verb:set package 'aura_rl' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.181s] Level 5:colcon.colcon_core.verb:set package 'aura_rl' build argument 'cmake_clean_cache' from command line to 'False'
+[0.181s] Level 5:colcon.colcon_core.verb:set package 'aura_rl' build argument 'cmake_clean_first' from command line to 'False'
+[0.181s] Level 5:colcon.colcon_core.verb:set package 'aura_rl' build argument 'cmake_force_configure' from command line to 'False'
+[0.181s] Level 5:colcon.colcon_core.verb:set package 'aura_rl' build argument 'ament_cmake_args' from command line to 'None'
+[0.181s] Level 5:colcon.colcon_core.verb:set package 'aura_rl' build argument 'catkin_cmake_args' from command line to 'None'
+[0.181s] Level 5:colcon.colcon_core.verb:set package 'aura_rl' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.181s] DEBUG:colcon.colcon_core.verb:Building package 'aura_rl' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/sarthak/aura_ws/build/aura_rl', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/sarthak/aura_ws/install/aura_rl', 'merge_install': False, 'path': '/home/sarthak/aura_ws/src/aura_rl', 'symlink_install': True, 'test_result_base': None}
+[0.181s] INFO:colcon.colcon_core.executor:Executing jobs using 'parallel' executor
+[0.183s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete
+[0.183s] INFO:colcon.colcon_ros.task.ament_python.build:Building ROS package in '/home/sarthak/aura_ws/src/aura_bringup' with build type 'ament_python'
+[0.183s] Level 1:colcon.colcon_core.shell:create_environment_hook('aura_bringup', 'ament_prefix_path')
+[0.184s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_core.shell.bat': Not used on non-Windows systems
+[0.184s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/sarthak/aura_ws/install/aura_bringup/share/aura_bringup/hook/ament_prefix_path.ps1'
+[0.184s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/sarthak/aura_ws/install/aura_bringup/share/aura_bringup/hook/ament_prefix_path.dsv'
+[0.185s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/sarthak/aura_ws/install/aura_bringup/share/aura_bringup/hook/ament_prefix_path.sh'
+[0.185s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.185s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.188s] INFO:colcon.colcon_ros.task.ament_python.build:Building ROS package in '/home/sarthak/aura_ws/src/aura_control' with build type 'ament_python'
+[0.188s] Level 1:colcon.colcon_core.shell:create_environment_hook('aura_control', 'ament_prefix_path')
+[0.189s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/sarthak/aura_ws/install/aura_control/share/aura_control/hook/ament_prefix_path.ps1'
+[0.189s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/sarthak/aura_ws/install/aura_control/share/aura_control/hook/ament_prefix_path.dsv'
+[0.189s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/sarthak/aura_ws/install/aura_control/share/aura_control/hook/ament_prefix_path.sh'
+[0.189s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.189s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.193s] INFO:colcon.colcon_ros.task.ament_python.build:Building ROS package in '/home/sarthak/aura_ws/src/aura_faults' with build type 'ament_python'
+[0.193s] Level 1:colcon.colcon_core.shell:create_environment_hook('aura_faults', 'ament_prefix_path')
+[0.193s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/sarthak/aura_ws/install/aura_faults/share/aura_faults/hook/ament_prefix_path.ps1'
+[0.194s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/sarthak/aura_ws/install/aura_faults/share/aura_faults/hook/ament_prefix_path.dsv'
+[0.194s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/sarthak/aura_ws/install/aura_faults/share/aura_faults/hook/ament_prefix_path.sh'
+[0.195s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.195s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.198s] INFO:colcon.colcon_ros.task.ament_python.build:Building ROS package in '/home/sarthak/aura_ws/src/aura_monitor' with build type 'ament_python'
+[0.198s] Level 1:colcon.colcon_core.shell:create_environment_hook('aura_monitor', 'ament_prefix_path')
+[0.198s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/sarthak/aura_ws/install/aura_monitor/share/aura_monitor/hook/ament_prefix_path.ps1'
+[0.199s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/sarthak/aura_ws/install/aura_monitor/share/aura_monitor/hook/ament_prefix_path.dsv'
+[0.199s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/sarthak/aura_ws/install/aura_monitor/share/aura_monitor/hook/ament_prefix_path.sh'
+[0.200s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.200s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.202s] INFO:colcon.colcon_ros.task.ament_python.build:Building ROS package in '/home/sarthak/aura_ws/src/aura_perception' with build type 'ament_python'
+[0.203s] Level 1:colcon.colcon_core.shell:create_environment_hook('aura_perception', 'ament_prefix_path')
+[0.203s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/sarthak/aura_ws/install/aura_perception/share/aura_perception/hook/ament_prefix_path.ps1'
+[0.204s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/sarthak/aura_ws/install/aura_perception/share/aura_perception/hook/ament_prefix_path.dsv'
+[0.204s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/sarthak/aura_ws/install/aura_perception/share/aura_perception/hook/ament_prefix_path.sh'
+[0.205s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.205s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.208s] INFO:colcon.colcon_ros.task.ament_python.build:Building ROS package in '/home/sarthak/aura_ws/src/aura_rl' with build type 'ament_python'
+[0.208s] Level 1:colcon.colcon_core.shell:create_environment_hook('aura_rl', 'ament_prefix_path')
+[0.208s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/sarthak/aura_ws/install/aura_rl/share/aura_rl/hook/ament_prefix_path.ps1'
+[0.209s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/sarthak/aura_ws/install/aura_rl/share/aura_rl/hook/ament_prefix_path.dsv'
+[0.209s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/sarthak/aura_ws/install/aura_rl/share/aura_rl/hook/ament_prefix_path.sh'
+[0.209s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.209s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.370s] INFO:colcon.colcon_core.task.python.build:Building Python package in '/home/sarthak/aura_ws/src/aura_bringup'
+[0.370s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.370s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.521s] INFO:colcon.colcon_core.task.python.build:Building Python package in '/home/sarthak/aura_ws/src/aura_control'
+[0.523s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.523s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.639s] INFO:colcon.colcon_core.task.python.build:Building Python package in '/home/sarthak/aura_ws/src/aura_faults'
+[0.639s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.639s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.770s] INFO:colcon.colcon_core.task.python.build:Building Python package in '/home/sarthak/aura_ws/src/aura_monitor'
+[0.770s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.770s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.906s] INFO:colcon.colcon_core.task.python.build:Building Python package in '/home/sarthak/aura_ws/src/aura_perception'
+[0.907s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.907s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[1.045s] INFO:colcon.colcon_core.task.python.build:Building Python package in '/home/sarthak/aura_ws/src/aura_rl'
+[1.045s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[1.045s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[1.492s] DEBUG:colcon.colcon_core.task.python.build:Available setuptools commands: develop, check, install_headers, init_catalog, setopt, bdist_dumb, install_lib, sdist, build_scripts, rotate, build_py, clean, update_catalog, bdist_egg, saveopts, install_data, bdist, easy_install, bdist_wheel, register, install_egg_info, extract_messages, build, build_clib, dist_info, install, bdist_rpm, compile_catalog, upload, symlink_data, editable_wheel, test, alias, build_ext, upload_docs, install_scripts, egg_info
+[1.517s] DEBUG:colcon.colcon_core.task.python.build:Available setuptools commands: develop, check, install_headers, init_catalog, setopt, bdist_dumb, install_lib, sdist, build_scripts, rotate, build_py, clean, update_catalog, bdist_egg, saveopts, install_data, bdist, easy_install, bdist_wheel, register, install_egg_info, extract_messages, build, build_clib, dist_info, install, bdist_rpm, compile_catalog, upload, symlink_data, editable_wheel, test, alias, build_ext, upload_docs, install_scripts, egg_info
+[1.519s] DEBUG:colcon.colcon_core.task.python.build:Available setuptools commands: develop, check, install_headers, init_catalog, setopt, bdist_dumb, install_lib, sdist, build_scripts, rotate, build_py, clean, update_catalog, bdist_egg, saveopts, install_data, bdist, easy_install, bdist_wheel, register, install_egg_info, extract_messages, build, build_clib, dist_info, install, bdist_rpm, compile_catalog, upload, symlink_data, editable_wheel, test, alias, build_ext, upload_docs, install_scripts, egg_info
+[1.543s] DEBUG:colcon.colcon_core.task.python.build:Available setuptools commands: develop, check, install_headers, init_catalog, setopt, bdist_dumb, install_lib, sdist, build_scripts, rotate, build_py, clean, update_catalog, bdist_egg, saveopts, install_data, bdist, easy_install, bdist_wheel, register, install_egg_info, extract_messages, build, build_clib, dist_info, install, bdist_rpm, compile_catalog, upload, symlink_data, editable_wheel, test, alias, build_ext, upload_docs, install_scripts, egg_info
+[1.550s] DEBUG:colcon.colcon_core.task.python.build:Available setuptools commands: develop, check, install_headers, init_catalog, setopt, bdist_dumb, install_lib, sdist, build_scripts, rotate, build_py, clean, update_catalog, bdist_egg, saveopts, install_data, bdist, easy_install, bdist_wheel, register, install_egg_info, extract_messages, build, build_clib, dist_info, install, bdist_rpm, compile_catalog, upload, symlink_data, editable_wheel, test, alias, build_ext, upload_docs, install_scripts, egg_info
+[1.560s] DEBUG:colcon.colcon_core.task.python.build:Available setuptools commands: develop, check, install_headers, init_catalog, setopt, bdist_dumb, install_lib, sdist, build_scripts, rotate, build_py, clean, update_catalog, bdist_egg, saveopts, install_data, bdist, easy_install, bdist_wheel, register, install_egg_info, extract_messages, build, build_clib, dist_info, install, bdist_rpm, compile_catalog, upload, symlink_data, editable_wheel, test, alias, build_ext, upload_docs, install_scripts, egg_info
+[1.778s] DEBUG:colcon.colcon_core.task.python.build:Available setuptools 'develop' options: --always-copy, --help, --no-user-cfg, --no-deps, --local-snapshots-ok, --force-installation-into-system-dir, --record, --site-dirs, --egg-path, --dry-run, --version, --allow-hosts, --build-directory, --install-layout, --always-unzip, --exclude-scripts, --uninstall, --editable, --prefix, --multi-version, --quiet, --zip-ok, --install-dir, --upgrade, --user, --index-url, --verbose, --find-links, --no-find-links, --optimize, --script-dir
+[1.779s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/sarthak/aura_ws/build/aura_perception': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/sarthak/aura_ws/build/aura_perception/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/sarthak/aura_ws/install/aura_perception/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/sarthak/aura_ws/build/aura_perception/build --no-deps symlink_data
+[1.787s] DEBUG:colcon.colcon_core.task.python.build:Available setuptools 'develop' options: --always-copy, --help, --no-user-cfg, --no-deps, --local-snapshots-ok, --force-installation-into-system-dir, --record, --site-dirs, --egg-path, --dry-run, --version, --allow-hosts, --build-directory, --install-layout, --always-unzip, --exclude-scripts, --uninstall, --editable, --prefix, --multi-version, --quiet, --zip-ok, --install-dir, --upgrade, --user, --index-url, --verbose, --find-links, --no-find-links, --optimize, --script-dir
+[1.788s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/sarthak/aura_ws/build/aura_rl': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/sarthak/aura_ws/build/aura_rl/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/sarthak/aura_ws/install/aura_rl/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/sarthak/aura_ws/build/aura_rl/build --no-deps symlink_data
+[1.806s] DEBUG:colcon.colcon_core.task.python.build:Available setuptools 'develop' options: --always-copy, --help, --no-user-cfg, --no-deps, --local-snapshots-ok, --force-installation-into-system-dir, --record, --site-dirs, --egg-path, --dry-run, --version, --allow-hosts, --build-directory, --install-layout, --always-unzip, --exclude-scripts, --uninstall, --editable, --prefix, --multi-version, --quiet, --zip-ok, --install-dir, --upgrade, --user, --index-url, --verbose, --find-links, --no-find-links, --optimize, --script-dir
+[1.810s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/sarthak/aura_ws/build/aura_control': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/sarthak/aura_ws/build/aura_control/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/sarthak/aura_ws/install/aura_control/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/sarthak/aura_ws/build/aura_control/build --no-deps symlink_data
+[1.825s] DEBUG:colcon.colcon_core.task.python.build:Available setuptools 'develop' options: --always-copy, --help, --no-user-cfg, --no-deps, --local-snapshots-ok, --force-installation-into-system-dir, --record, --site-dirs, --egg-path, --dry-run, --version, --allow-hosts, --build-directory, --install-layout, --always-unzip, --exclude-scripts, --uninstall, --editable, --prefix, --multi-version, --quiet, --zip-ok, --install-dir, --upgrade, --user, --index-url, --verbose, --find-links, --no-find-links, --optimize, --script-dir
+[1.826s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/sarthak/aura_ws/build/aura_bringup': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/sarthak/aura_ws/build/aura_bringup/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/sarthak/aura_ws/install/aura_bringup/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/sarthak/aura_ws/build/aura_bringup/build --no-deps symlink_data
+[1.834s] DEBUG:colcon.colcon_core.task.python.build:Available setuptools 'develop' options: --always-copy, --help, --no-user-cfg, --no-deps, --local-snapshots-ok, --force-installation-into-system-dir, --record, --site-dirs, --egg-path, --dry-run, --version, --allow-hosts, --build-directory, --install-layout, --always-unzip, --exclude-scripts, --uninstall, --editable, --prefix, --multi-version, --quiet, --zip-ok, --install-dir, --upgrade, --user, --index-url, --verbose, --find-links, --no-find-links, --optimize, --script-dir
+[1.835s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/sarthak/aura_ws/build/aura_monitor': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/sarthak/aura_ws/build/aura_monitor/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/sarthak/aura_ws/install/aura_monitor/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/sarthak/aura_ws/build/aura_monitor/build --no-deps symlink_data
+[1.853s] DEBUG:colcon.colcon_core.task.python.build:Available setuptools 'develop' options: --always-copy, --help, --no-user-cfg, --no-deps, --local-snapshots-ok, --force-installation-into-system-dir, --record, --site-dirs, --egg-path, --dry-run, --version, --allow-hosts, --build-directory, --install-layout, --always-unzip, --exclude-scripts, --uninstall, --editable, --prefix, --multi-version, --quiet, --zip-ok, --install-dir, --upgrade, --user, --index-url, --verbose, --find-links, --no-find-links, --optimize, --script-dir
+[1.858s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/sarthak/aura_ws/build/aura_faults': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/sarthak/aura_ws/build/aura_faults/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/sarthak/aura_ws/install/aura_faults/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/sarthak/aura_ws/build/aura_faults/build --no-deps symlink_data
+[2.309s] Level 1:colcon.colcon_core.shell:create_environment_hook('aura_monitor', 'pythonpath_develop')
+[2.310s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/sarthak/aura_ws/build/aura_monitor' returned '0': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/sarthak/aura_ws/build/aura_monitor/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/sarthak/aura_ws/install/aura_monitor/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/sarthak/aura_ws/build/aura_monitor/build --no-deps symlink_data
+[2.310s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/sarthak/aura_ws/build/aura_monitor/share/aura_monitor/hook/pythonpath_develop.ps1'
+[2.310s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/sarthak/aura_ws/build/aura_monitor/share/aura_monitor/hook/pythonpath_develop.dsv'
+[2.311s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/sarthak/aura_ws/build/aura_monitor/share/aura_monitor/hook/pythonpath_develop.sh'
+[2.314s] Level 1:colcon.colcon_core.environment:checking '/home/sarthak/aura_ws/install/aura_monitor' for CMake module files
+[2.316s] Level 1:colcon.colcon_core.environment:checking '/home/sarthak/aura_ws/install/aura_monitor' for CMake config files
+[2.316s] Level 1:colcon.colcon_core.environment:checking '/home/sarthak/aura_ws/install/aura_monitor/lib'
+[2.316s] Level 1:colcon.colcon_core.environment:checking '/home/sarthak/aura_ws/install/aura_monitor/bin'
+[2.316s] Level 1:colcon.colcon_core.environment:checking '/home/sarthak/aura_ws/install/aura_monitor/lib/pkgconfig/aura_monitor.pc'
+[2.316s] Level 1:colcon.colcon_core.environment:checking '/home/sarthak/aura_ws/install/aura_monitor/lib/python3.12/site-packages'
+[2.316s] Level 1:colcon.colcon_core.shell:create_environment_hook('aura_monitor', 'pythonpath')
+[2.316s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/sarthak/aura_ws/install/aura_monitor/share/aura_monitor/hook/pythonpath.ps1'
+[2.317s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/sarthak/aura_ws/install/aura_monitor/share/aura_monitor/hook/pythonpath.dsv'
+[2.319s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/sarthak/aura_ws/install/aura_monitor/share/aura_monitor/hook/pythonpath.sh'
+[2.321s] Level 1:colcon.colcon_core.environment:checking '/home/sarthak/aura_ws/install/aura_monitor/bin'
+[2.321s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(aura_monitor)
+[2.321s] INFO:colcon.colcon_core.shell:Creating package script '/home/sarthak/aura_ws/install/aura_monitor/share/aura_monitor/package.ps1'
+[2.321s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/sarthak/aura_ws/install/aura_monitor/share/aura_monitor/package.dsv'
+[2.322s] INFO:colcon.colcon_core.shell:Creating package script '/home/sarthak/aura_ws/install/aura_monitor/share/aura_monitor/package.sh'
+[2.322s] INFO:colcon.colcon_core.shell:Creating package script '/home/sarthak/aura_ws/install/aura_monitor/share/aura_monitor/package.bash'
+[2.323s] INFO:colcon.colcon_core.shell:Creating package script '/home/sarthak/aura_ws/install/aura_monitor/share/aura_monitor/package.zsh'
+[2.324s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/sarthak/aura_ws/install/aura_monitor/share/colcon-core/packages/aura_monitor)
+[2.326s] Level 1:colcon.colcon_core.shell:create_environment_hook('aura_rl', 'pythonpath_develop')
+[2.326s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/sarthak/aura_ws/build/aura_rl' returned '0': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/sarthak/aura_ws/build/aura_rl/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/sarthak/aura_ws/install/aura_rl/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/sarthak/aura_ws/build/aura_rl/build --no-deps symlink_data
+[2.327s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/sarthak/aura_ws/build/aura_rl/share/aura_rl/hook/pythonpath_develop.ps1'
+[2.327s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/sarthak/aura_ws/build/aura_rl/share/aura_rl/hook/pythonpath_develop.dsv'
+[2.328s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/sarthak/aura_ws/build/aura_rl/share/aura_rl/hook/pythonpath_develop.sh'
+[2.330s] Level 1:colcon.colcon_core.environment:checking '/home/sarthak/aura_ws/install/aura_rl' for CMake module files
+[2.330s] Level 1:colcon.colcon_core.environment:checking '/home/sarthak/aura_ws/install/aura_rl' for CMake config files
+[2.330s] Level 1:colcon.colcon_core.environment:checking '/home/sarthak/aura_ws/install/aura_rl/lib'
+[2.331s] Level 1:colcon.colcon_core.environment:checking '/home/sarthak/aura_ws/install/aura_rl/bin'
+[2.331s] Level 1:colcon.colcon_core.environment:checking '/home/sarthak/aura_ws/install/aura_rl/lib/pkgconfig/aura_rl.pc'
+[2.331s] Level 1:colcon.colcon_core.environment:checking '/home/sarthak/aura_ws/install/aura_rl/lib/python3.12/site-packages'
+[2.334s] Level 1:colcon.colcon_core.shell:create_environment_hook('aura_rl', 'pythonpath')
+[2.334s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/sarthak/aura_ws/install/aura_rl/share/aura_rl/hook/pythonpath.ps1'
+[2.335s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/sarthak/aura_ws/install/aura_rl/share/aura_rl/hook/pythonpath.dsv'
+[2.336s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/sarthak/aura_ws/install/aura_rl/share/aura_rl/hook/pythonpath.sh'
+[2.339s] Level 1:colcon.colcon_core.environment:checking '/home/sarthak/aura_ws/install/aura_rl/bin'
+[2.339s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(aura_rl)
+[2.339s] INFO:colcon.colcon_core.shell:Creating package script '/home/sarthak/aura_ws/install/aura_rl/share/aura_rl/package.ps1'
+[2.341s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/sarthak/aura_ws/install/aura_rl/share/aura_rl/package.dsv'
+[2.342s] INFO:colcon.colcon_core.shell:Creating package script '/home/sarthak/aura_ws/install/aura_rl/share/aura_rl/package.sh'
+[2.343s] INFO:colcon.colcon_core.shell:Creating package script '/home/sarthak/aura_ws/install/aura_rl/share/aura_rl/package.bash'
+[2.346s] INFO:colcon.colcon_core.shell:Creating package script '/home/sarthak/aura_ws/install/aura_rl/share/aura_rl/package.zsh'
+[2.347s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/sarthak/aura_ws/install/aura_rl/share/colcon-core/packages/aura_rl)
+[2.352s] Level 1:colcon.colcon_core.shell:create_environment_hook('aura_perception', 'pythonpath_develop')
+[2.353s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/sarthak/aura_ws/build/aura_perception' returned '0': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/sarthak/aura_ws/build/aura_perception/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/sarthak/aura_ws/install/aura_perception/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/sarthak/aura_ws/build/aura_perception/build --no-deps symlink_data
+[2.353s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/sarthak/aura_ws/build/aura_perception/share/aura_perception/hook/pythonpath_develop.ps1'
+[2.353s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/sarthak/aura_ws/build/aura_perception/share/aura_perception/hook/pythonpath_develop.dsv'
+[2.354s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/sarthak/aura_ws/build/aura_perception/share/aura_perception/hook/pythonpath_develop.sh'
+[2.355s] Level 1:colcon.colcon_core.environment:checking '/home/sarthak/aura_ws/install/aura_perception' for CMake module files
+[2.355s] Level 1:colcon.colcon_core.environment:checking '/home/sarthak/aura_ws/install/aura_perception' for CMake config files
+[2.355s] Level 1:colcon.colcon_core.environment:checking '/home/sarthak/aura_ws/install/aura_perception/lib'
+[2.355s] Level 1:colcon.colcon_core.environment:checking '/home/sarthak/aura_ws/install/aura_perception/bin'
+[2.355s] Level 1:colcon.colcon_core.environment:checking '/home/sarthak/aura_ws/install/aura_perception/lib/pkgconfig/aura_perception.pc'
+[2.355s] Level 1:colcon.colcon_core.environment:checking '/home/sarthak/aura_ws/install/aura_perception/lib/python3.12/site-packages'
+[2.355s] Level 1:colcon.colcon_core.shell:create_environment_hook('aura_perception', 'pythonpath')
+[2.355s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/sarthak/aura_ws/install/aura_perception/share/aura_perception/hook/pythonpath.ps1'
+[2.356s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/sarthak/aura_ws/install/aura_perception/share/aura_perception/hook/pythonpath.dsv'
+[2.356s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/sarthak/aura_ws/install/aura_perception/share/aura_perception/hook/pythonpath.sh'
+[2.357s] Level 1:colcon.colcon_core.environment:checking '/home/sarthak/aura_ws/install/aura_perception/bin'
+[2.357s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(aura_perception)
+[2.357s] INFO:colcon.colcon_core.shell:Creating package script '/home/sarthak/aura_ws/install/aura_perception/share/aura_perception/package.ps1'
+[2.357s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/sarthak/aura_ws/install/aura_perception/share/aura_perception/package.dsv'
+[2.357s] INFO:colcon.colcon_core.shell:Creating package script '/home/sarthak/aura_ws/install/aura_perception/share/aura_perception/package.sh'
+[2.360s] INFO:colcon.colcon_core.shell:Creating package script '/home/sarthak/aura_ws/install/aura_perception/share/aura_perception/package.bash'
+[2.361s] INFO:colcon.colcon_core.shell:Creating package script '/home/sarthak/aura_ws/install/aura_perception/share/aura_perception/package.zsh'
+[2.362s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/sarthak/aura_ws/install/aura_perception/share/colcon-core/packages/aura_perception)
+[2.364s] Level 1:colcon.colcon_core.shell:create_environment_hook('aura_control', 'pythonpath_develop')
+[2.365s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/sarthak/aura_ws/build/aura_control/share/aura_control/hook/pythonpath_develop.ps1'
+[2.365s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/sarthak/aura_ws/build/aura_control/share/aura_control/hook/pythonpath_develop.dsv'
+[2.365s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/sarthak/aura_ws/build/aura_control/share/aura_control/hook/pythonpath_develop.sh'
+[2.366s] Level 1:colcon.colcon_core.environment:checking '/home/sarthak/aura_ws/install/aura_control' for CMake module files
+[2.366s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/sarthak/aura_ws/build/aura_control' returned '0': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/sarthak/aura_ws/build/aura_control/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/sarthak/aura_ws/install/aura_control/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/sarthak/aura_ws/build/aura_control/build --no-deps symlink_data
+[2.366s] Level 1:colcon.colcon_core.environment:checking '/home/sarthak/aura_ws/install/aura_control' for CMake config files
+[2.367s] Level 1:colcon.colcon_core.environment:checking '/home/sarthak/aura_ws/install/aura_control/lib'
+[2.367s] Level 1:colcon.colcon_core.environment:checking '/home/sarthak/aura_ws/install/aura_control/bin'
+[2.367s] Level 1:colcon.colcon_core.environment:checking '/home/sarthak/aura_ws/install/aura_control/lib/pkgconfig/aura_control.pc'
+[2.367s] Level 1:colcon.colcon_core.environment:checking '/home/sarthak/aura_ws/install/aura_control/lib/python3.12/site-packages'
+[2.367s] Level 1:colcon.colcon_core.shell:create_environment_hook('aura_control', 'pythonpath')
+[2.367s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/sarthak/aura_ws/install/aura_control/share/aura_control/hook/pythonpath.ps1'
+[2.368s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/sarthak/aura_ws/install/aura_control/share/aura_control/hook/pythonpath.dsv'
+[2.368s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/sarthak/aura_ws/install/aura_control/share/aura_control/hook/pythonpath.sh'
+[2.369s] Level 1:colcon.colcon_core.environment:checking '/home/sarthak/aura_ws/install/aura_control/bin'
+[2.369s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(aura_control)
+[2.369s] INFO:colcon.colcon_core.shell:Creating package script '/home/sarthak/aura_ws/install/aura_control/share/aura_control/package.ps1'
+[2.369s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/sarthak/aura_ws/install/aura_control/share/aura_control/package.dsv'
+[2.369s] INFO:colcon.colcon_core.shell:Creating package script '/home/sarthak/aura_ws/install/aura_control/share/aura_control/package.sh'
+[2.372s] INFO:colcon.colcon_core.shell:Creating package script '/home/sarthak/aura_ws/install/aura_control/share/aura_control/package.bash'
+[2.372s] INFO:colcon.colcon_core.shell:Creating package script '/home/sarthak/aura_ws/install/aura_control/share/aura_control/package.zsh'
+[2.372s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/sarthak/aura_ws/install/aura_control/share/colcon-core/packages/aura_control)
+[2.373s] Level 1:colcon.colcon_core.shell:create_environment_hook('aura_bringup', 'pythonpath_develop')
+[2.373s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/sarthak/aura_ws/build/aura_bringup/share/aura_bringup/hook/pythonpath_develop.ps1'
+[2.373s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/sarthak/aura_ws/build/aura_bringup/share/aura_bringup/hook/pythonpath_develop.dsv'
+[2.373s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/sarthak/aura_ws/build/aura_bringup/share/aura_bringup/hook/pythonpath_develop.sh'
+[2.373s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/sarthak/aura_ws/build/aura_bringup' returned '0': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/sarthak/aura_ws/build/aura_bringup/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/sarthak/aura_ws/install/aura_bringup/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/sarthak/aura_ws/build/aura_bringup/build --no-deps symlink_data
+[2.373s] Level 1:colcon.colcon_core.environment:checking '/home/sarthak/aura_ws/install/aura_bringup' for CMake module files
+[2.375s] Level 1:colcon.colcon_core.environment:checking '/home/sarthak/aura_ws/install/aura_bringup' for CMake config files
+[2.375s] Level 1:colcon.colcon_core.environment:checking '/home/sarthak/aura_ws/install/aura_bringup/lib'
+[2.375s] Level 1:colcon.colcon_core.environment:checking '/home/sarthak/aura_ws/install/aura_bringup/bin'
+[2.375s] Level 1:colcon.colcon_core.environment:checking '/home/sarthak/aura_ws/install/aura_bringup/lib/pkgconfig/aura_bringup.pc'
+[2.375s] Level 1:colcon.colcon_core.environment:checking '/home/sarthak/aura_ws/install/aura_bringup/lib/python3.12/site-packages'
+[2.375s] Level 1:colcon.colcon_core.shell:create_environment_hook('aura_bringup', 'pythonpath')
+[2.375s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/sarthak/aura_ws/install/aura_bringup/share/aura_bringup/hook/pythonpath.ps1'
+[2.376s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/sarthak/aura_ws/install/aura_bringup/share/aura_bringup/hook/pythonpath.dsv'
+[2.376s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/sarthak/aura_ws/install/aura_bringup/share/aura_bringup/hook/pythonpath.sh'
+[2.377s] Level 1:colcon.colcon_core.environment:checking '/home/sarthak/aura_ws/install/aura_bringup/bin'
+[2.377s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(aura_bringup)
+[2.377s] INFO:colcon.colcon_core.shell:Creating package script '/home/sarthak/aura_ws/install/aura_bringup/share/aura_bringup/package.ps1'
+[2.377s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/sarthak/aura_ws/install/aura_bringup/share/aura_bringup/package.dsv'
+[2.378s] INFO:colcon.colcon_core.shell:Creating package script '/home/sarthak/aura_ws/install/aura_bringup/share/aura_bringup/package.sh'
+[2.379s] INFO:colcon.colcon_core.shell:Creating package script '/home/sarthak/aura_ws/install/aura_bringup/share/aura_bringup/package.bash'
+[2.379s] INFO:colcon.colcon_core.shell:Creating package script '/home/sarthak/aura_ws/install/aura_bringup/share/aura_bringup/package.zsh'
+[2.379s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/sarthak/aura_ws/install/aura_bringup/share/colcon-core/packages/aura_bringup)
+[2.426s] Level 1:colcon.colcon_core.shell:create_environment_hook('aura_faults', 'pythonpath_develop')
+[2.426s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/sarthak/aura_ws/build/aura_faults/share/aura_faults/hook/pythonpath_develop.ps1'
+[2.427s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/sarthak/aura_ws/build/aura_faults/share/aura_faults/hook/pythonpath_develop.dsv'
+[2.427s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/sarthak/aura_ws/build/aura_faults/share/aura_faults/hook/pythonpath_develop.sh'
+[2.428s] Level 1:colcon.colcon_core.environment:checking '/home/sarthak/aura_ws/install/aura_faults' for CMake module files
+[2.429s] Level 1:colcon.colcon_core.environment:checking '/home/sarthak/aura_ws/install/aura_faults' for CMake config files
+[2.429s] Level 1:colcon.colcon_core.environment:checking '/home/sarthak/aura_ws/install/aura_faults/lib'
+[2.429s] Level 1:colcon.colcon_core.environment:checking '/home/sarthak/aura_ws/install/aura_faults/bin'
+[2.429s] Level 1:colcon.colcon_core.environment:checking '/home/sarthak/aura_ws/install/aura_faults/lib/pkgconfig/aura_faults.pc'
+[2.429s] Level 1:colcon.colcon_core.environment:checking '/home/sarthak/aura_ws/install/aura_faults/lib/python3.12/site-packages'
+[2.429s] Level 1:colcon.colcon_core.shell:create_environment_hook('aura_faults', 'pythonpath')
+[2.429s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/sarthak/aura_ws/install/aura_faults/share/aura_faults/hook/pythonpath.ps1'
+[2.429s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/sarthak/aura_ws/build/aura_faults' returned '0': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/sarthak/aura_ws/build/aura_faults/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/sarthak/aura_ws/install/aura_faults/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/sarthak/aura_ws/build/aura_faults/build --no-deps symlink_data
+[2.430s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/sarthak/aura_ws/install/aura_faults/share/aura_faults/hook/pythonpath.dsv'
+[2.430s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/sarthak/aura_ws/install/aura_faults/share/aura_faults/hook/pythonpath.sh'
+[2.430s] Level 1:colcon.colcon_core.environment:checking '/home/sarthak/aura_ws/install/aura_faults/bin'
+[2.430s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(aura_faults)
+[2.431s] INFO:colcon.colcon_core.shell:Creating package script '/home/sarthak/aura_ws/install/aura_faults/share/aura_faults/package.ps1'
+[2.431s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/sarthak/aura_ws/install/aura_faults/share/aura_faults/package.dsv'
+[2.432s] INFO:colcon.colcon_core.shell:Creating package script '/home/sarthak/aura_ws/install/aura_faults/share/aura_faults/package.sh'
+[2.432s] INFO:colcon.colcon_core.shell:Creating package script '/home/sarthak/aura_ws/install/aura_faults/share/aura_faults/package.bash'
+[2.432s] INFO:colcon.colcon_core.shell:Creating package script '/home/sarthak/aura_ws/install/aura_faults/share/aura_faults/package.zsh'
+[2.433s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/sarthak/aura_ws/install/aura_faults/share/colcon-core/packages/aura_faults)
+[2.433s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:closing loop
+[2.434s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:loop closed
+[2.434s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete finished with '0'
+[2.434s] DEBUG:colcon.colcon_core.event_reactor:joining thread
+[2.454s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.terminal_notifier': Not used on non-Darwin systems
+[2.454s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.win32': Not used on non-Windows systems
+[2.454s] INFO:colcon.colcon_notification.desktop_notification:Sending desktop notification using 'notify2'
+[2.480s] DEBUG:colcon.colcon_core.event_reactor:joined thread
+[2.480s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/sarthak/aura_ws/install/local_setup.ps1'
+[2.481s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/sarthak/aura_ws/install/_local_setup_util_ps1.py'
+[2.482s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/sarthak/aura_ws/install/setup.ps1'
+[2.484s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/sarthak/aura_ws/install/local_setup.sh'
+[2.485s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/sarthak/aura_ws/install/_local_setup_util_sh.py'
+[2.486s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/sarthak/aura_ws/install/setup.sh'
+[2.487s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/sarthak/aura_ws/install/local_setup.bash'
+[2.487s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/sarthak/aura_ws/install/setup.bash'
+[2.488s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/sarthak/aura_ws/install/local_setup.zsh'
+[2.488s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/sarthak/aura_ws/install/setup.zsh'

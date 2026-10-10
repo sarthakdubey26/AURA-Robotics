@@ -1,0 +1,20 @@
+running develop
+running egg_info
+creating aura_perception.egg-info
+writing aura_perception.egg-info/PKG-INFO
+writing dependency_links to aura_perception.egg-info/dependency_links.txt
+writing requirements to aura_perception.egg-info/requires.txt
+writing top-level names to aura_perception.egg-info/top_level.txt
+writing manifest file 'aura_perception.egg-info/SOURCES.txt'
+reading manifest file 'aura_perception.egg-info/SOURCES.txt'
+writing manifest file 'aura_perception.egg-info/SOURCES.txt'
+running build_ext
+Creating /home/sarthak/aura_ws/install/aura_perception/lib/python3.12/site-packages/aura-perception.egg-link (link to .)
+
+Installed /home/sarthak/aura_ws/build/aura_perception
+running symlink_data
+creating /home/sarthak/aura_ws/install/aura_perception/share/ament_index
+creating /home/sarthak/aura_ws/install/aura_perception/share/ament_index/resource_index
+creating /home/sarthak/aura_ws/install/aura_perception/share/ament_index/resource_index/packages
+symbolically linking /home/sarthak/aura_ws/build/aura_perception/resource/aura_perception -> /home/sarthak/aura_ws/install/aura_perception/share/ament_index/resource_index/packages
+symbolically linking /home/sarthak/aura_ws/build/aura_perception/package.xml -> /home/sarthak/aura_ws/install/aura_perception/share/aura_perception

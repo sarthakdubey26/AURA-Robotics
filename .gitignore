@@ -1,0 +1,37 @@
+# ROS2 generated folders
+build/
+install/
+log/
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.egg-info/
+.pytest_cache/
+
+# Editors
+.vscode/
+.idea/
+
+# OS
+.DS_Store
+
+# Temporary files
+*.tmp
+*.swp
+*~
+
+# ROS bags
+*.bag
+*.db3
+*.mcap
+
+# ML models
+*.pt
+*.pth
+*.onnx
+*.engine
+
+# Logs
+*.log

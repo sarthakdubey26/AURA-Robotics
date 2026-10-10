@@ -1,0 +1,11 @@
+package.xml
+setup.cfg
+setup.py
+aura_control/__init__.py
+aura_control.egg-info/PKG-INFO
+aura_control.egg-info/SOURCES.txt
+aura_control.egg-info/dependency_links.txt
+aura_control.egg-info/requires.txt
+aura_control.egg-info/top_level.txt
+aura_control.egg-info/zip-safe
+resource/aura_control
