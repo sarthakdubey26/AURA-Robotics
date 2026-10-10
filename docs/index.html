@@ -7,6 +7,7 @@
 <title>AURA | Adaptive Robotic Autonomy</title>
 
 <style>
+
 * {
     box-sizing: border-box;
 }
@@ -18,57 +19,165 @@ html {
 body {
     margin: 0;
     font-family: Arial, Helvetica, sans-serif;
-    background: #070a11;
+    background: #050810;
     color: white;
+    overflow-x: hidden;
 }
 
-.hero {
-    min-height: 100vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
+/* MOVING BACKGROUND */
 
-    background:
-        radial-gradient(circle at 20% 25%, #173b78, transparent 40%),
-        radial-gradient(circle at 80% 75%, #145044, transparent 40%),
-        #070a11;
+body::before {
+    content: "";
+    position: fixed;
+    width: 700px;
+    height: 700px;
+    background: #234f9c;
+    filter: blur(180px);
+    opacity: 0.22;
+    border-radius: 50%;
+    top: -250px;
+    left: -250px;
+    animation: blob1 10s infinite alternate ease-in-out;
+    z-index: -1;
+}
+
+body::after {
+    content: "";
+    position: fixed;
+    width: 700px;
+    height: 700px;
+    background: #137564;
+    filter: blur(180px);
+    opacity: 0.20;
+    border-radius: 50%;
+    bottom: -250px;
+    right: -250px;
+    animation: blob2 12s infinite alternate ease-in-out;
+    z-index: -1;
+}
+
+@keyframes blob1 {
+    from {
+        transform: translate(0,0);
+    }
+    to {
+        transform: translate(350px,250px);
+    }
+}
+
+@keyframes blob2 {
+    from {
+        transform: translate(0,0);
+    }
+    to {
+        transform: translate(-350px,-250px);
+    }
+}
+
+
+/* HERO */
+
+.hero {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
 }
 
 .hero-content {
-    animation: fadeUp 1.4s ease;
+    animation: appear 1.5s ease;
 }
 
-.hero h1 {
-    font-size: clamp(5rem, 15vw, 10rem);
-    margin: 0;
-    letter-spacing: 18px;
-}
-
-.hero h2 {
-    font-weight: 400;
-    color: #bcc6d8;
-}
-
-.hero p {
-    max-width: 760px;
-    margin: 30px auto;
-    color: #8d99ad;
-    line-height: 1.8;
-    font-size: 1.1rem;
-}
-
-@keyframes fadeUp {
+@keyframes appear {
     from {
         opacity: 0;
-        transform: translateY(45px);
+        transform: translateY(60px);
     }
-
     to {
         opacity: 1;
         transform: translateY(0);
     }
 }
+
+.hero h1 {
+    font-size: clamp(6rem, 16vw, 12rem);
+    letter-spacing: 25px;
+    margin: 0;
+
+    background: linear-gradient(
+        90deg,
+        #5f8cff,
+        #69e3c2,
+        #5f8cff
+    );
+
+    background-size: 300%;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+    animation:
+        gradientMove 4s linear infinite,
+        floating 3s ease-in-out infinite;
+}
+
+@keyframes gradientMove {
+    0% {
+        background-position: 0%;
+    }
+
+    100% {
+        background-position: 300%;
+    }
+}
+
+@keyframes floating {
+    0%,100% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-15px);
+    }
+}
+
+.hero h2 {
+    font-weight: 400;
+    color: #c2ccdc;
+    margin-top: 10px;
+}
+
+.hero p {
+    color: #8f9caf;
+    max-width: 750px;
+    margin: 30px auto;
+    font-size: 1.15rem;
+    line-height: 1.8;
+}
+
+
+/* SCROLL INDICATOR */
+
+.scroll {
+    margin-top: 50px;
+    font-size: 2rem;
+    animation: bounce 1.5s infinite;
+}
+
+@keyframes bounce {
+    0%,100% {
+        transform: translateY(0);
+        opacity: 0.4;
+    }
+
+    50% {
+        transform: translateY(15px);
+        opacity: 1;
+    }
+}
+
+
+/* SECTIONS */
 
 section {
     max-width: 1150px;
@@ -76,65 +185,103 @@ section {
     padding: 100px 30px;
 }
 
-h2 {
-    font-size: 2.5rem;
+section h2 {
+    font-size: 2.7rem;
 }
 
+
+/* PIPELINE */
+
 .pipeline {
+    margin-top: 50px;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
-    gap: 15px;
-    margin-top: 50px;
+    gap: 14px;
 }
 
 .node {
-    min-width: 160px;
-    padding: 30px 20px;
-    background: #101622;
-    border: 1px solid #293a56;
-    border-radius: 15px;
-    transition: 0.3s;
+    min-width: 170px;
+    padding: 32px 20px;
+
+    background: rgba(16,22,34,0.8);
+    border: 1px solid #2c405f;
+    border-radius: 16px;
+
     text-align: center;
+
+    transition: 0.35s;
+
+    animation: nodeGlow 3s infinite alternate;
 }
 
 .node:hover {
-    transform: translateY(-10px);
+    transform: translateY(-12px) scale(1.04);
     border-color: #6e9fff;
 }
 
-.arrow {
-    font-size: 2rem;
-    animation: pulse 1.4s infinite;
+@keyframes nodeGlow {
+    from {
+        box-shadow: 0 0 0 rgba(93,140,255,0);
+    }
+
+    to {
+        box-shadow: 0 0 25px rgba(93,140,255,0.25);
+    }
 }
 
-@keyframes pulse {
-    0%, 100% {
+
+/* MOVING ARROWS */
+
+.arrow {
+    font-size: 2.4rem;
+    animation: arrowMove 1s infinite alternate;
+}
+
+@keyframes arrowMove {
+    from {
+        transform: translateX(-5px);
         opacity: 0.25;
     }
 
-    50% {
+    to {
+        transform: translateX(7px);
         opacity: 1;
     }
 }
 
+
+/* PROGRESS */
+
 .progress-bg {
-    background: #171d29;
+    margin-top: 40px;
+    background: #151c2a;
     border-radius: 50px;
     overflow: hidden;
-    margin-top: 35px;
 }
 
 .progress {
     width: 30%;
-    padding: 13px;
+    padding: 14px;
     text-align: center;
-    background: linear-gradient(90deg, #527cff, #4fc4a3);
-    animation: load 2s ease;
+
+    background:
+        linear-gradient(
+            90deg,
+            #527cff,
+            #4fc4a3,
+            #527cff
+        );
+
+    background-size: 300%;
+
+    animation:
+        progressLoad 2s ease,
+        progressGlow 3s linear infinite;
 }
 
-@keyframes load {
+@keyframes progressLoad {
     from {
         width: 0;
     }
@@ -144,85 +291,179 @@ h2 {
     }
 }
 
+@keyframes progressGlow {
+    from {
+        background-position: 0;
+    }
+
+    to {
+        background-position: 300%;
+    }
+}
+
+
+/* CARDS */
+
 .cards {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+    grid-template-columns:
+        repeat(auto-fit,minmax(240px,1fr));
     gap: 25px;
 }
 
 .card {
-    background: #101622;
-    border: 1px solid #24324a;
-    border-radius: 15px;
+    background: rgba(16,22,34,.8);
+    border: 1px solid #25334c;
+    border-radius: 16px;
     padding: 30px;
-    transition: 0.3s;
+
+    transition: .35s;
 }
 
 .card:hover {
-    transform: translateY(-8px);
+    transform: translateY(-12px);
+    border-color: #5f8cff;
+    box-shadow: 0 20px 50px rgba(0,0,0,.35);
 }
 
 .card p {
-    color: #8e9aae;
+    color: #909caf;
     line-height: 1.7;
+}
+
+
+/* STATUS */
+
+.status-dot {
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+
+    background: #54d6a8;
+
+    border-radius: 50%;
+
+    margin-right: 8px;
+
+    animation: statusPulse 1.4s infinite;
+}
+
+@keyframes statusPulse {
+    0%,100% {
+        box-shadow: 0 0 0 0 rgba(84,214,168,.7);
+    }
+
+    50% {
+        box-shadow: 0 0 0 12px rgba(84,214,168,0);
+    }
 }
 
 footer {
     text-align: center;
-    padding: 70px 20px;
-    color: #69758b;
+    padding: 80px;
+    color: #6d798e;
 }
-</style>
 
+</style>
 </head>
+
 
 <body>
 
+
 <div class="hero">
-    <div class="hero-content">
 
-        <h1>AURA</h1>
+<div class="hero-content">
 
-        <h2>Adaptive Uncertainty-Aware Robotic Autonomy</h2>
+<h1>AURA</h1>
 
-        <p>
-        A ROS 2 research platform exploring how autonomous robots
-        can detect degraded sensing, perception and localization,
-        then adapt before uncertainty becomes failure.
-        </p>
+<h2>Adaptive Uncertainty-Aware Robotic Autonomy</h2>
 
-    </div>
+<p>
+A ROS 2 research platform for autonomous robots that
+monitor the reliability of their own sensing and state
+estimation and adapt before uncertainty becomes failure.
+</p>
+
+<p>
+<span class="status-dot"></span>
+Active Development
+</p>
+
+<div class="scroll">
+↓
 </div>
+
+</div>
+
+</div>
+
 
 <section>
 
 <h2>Autonomy Pipeline</h2>
 
 <div class="pipeline">
-    <div class="node">Sensors</div>
-    <div class="arrow">→</div>
-    <div class="node">Health Monitor</div>
-    <div class="arrow">→</div>
-    <div class="node">Adaptive Policy</div>
-    <div class="arrow">→</div>
-    <div class="node">Nav2</div>
-    <div class="arrow">→</div>
-    <div class="node">Robot</div>
+
+<div class="node">
+Sensors
+</div>
+
+<div class="arrow">
+→
+</div>
+
+<div class="node">
+Health Monitor
+</div>
+
+<div class="arrow">
+→
+</div>
+
+<div class="node">
+Adaptive Policy
+</div>
+
+<div class="arrow">
+→
+</div>
+
+<div class="node">
+Nav2
+</div>
+
+<div class="arrow">
+→
+</div>
+
+<div class="node">
+Robot
+</div>
+
 </div>
 
 </section>
+
 
 <section>
 
 <h2>Development Progress</h2>
 
-<p>AURA is currently under active development.</p>
+<p>
+Current AURA development status
+</p>
 
 <div class="progress-bg">
-    <div class="progress">30%</div>
+
+<div class="progress">
+30%
+</div>
+
 </div>
 
 </section>
+
 
 <section>
 
@@ -231,58 +472,82 @@ footer {
 <div class="cards">
 
 <div class="card">
+
 <h3>Health Monitoring</h3>
+
 <p>
-Monitors sensor freshness, state-estimation disagreement
-and localization reliability.
+Monitors LiDAR quality, odometry consistency,
+state-estimation reliability and localization uncertainty.
 </p>
+
 </div>
 
+
 <div class="card">
+
 <h3>Fault Injection</h3>
+
 <p>
 Introduces controlled LiDAR, IMU, odometry
-and perception failures.
+and perception faults for repeatable experiments.
 </p>
+
 </div>
 
+
 <div class="card">
+
 <h3>Adaptive Control</h3>
+
 <p>
-Changes robot behavior according to the health
-of the autonomy stack.
+Changes navigation behavior according to the
+current health of the autonomy stack.
 </p>
+
 </div>
 
+
 <div class="card">
+
 <h3>Reinforcement Learning</h3>
+
 <p>
-Uses PPO to learn when to trade speed,
-accuracy and compute cost for safety.
+Uses PPO to learn adaptive behavior under
+sensor degradation and compound faults.
 </p>
+
 </div>
 
 </div>
 
 </section>
+
 
 <section>
 
-<h2>Research Goal</h2>
+<h2>Research Question</h2>
 
-<p style="font-size:1.3rem; line-height:1.8; color:#b5c0d2;">
+<p style="
+font-size:1.4rem;
+line-height:1.8;
+color:#bac5d8;
+">
 
-Can an autonomous robot detect when its own sensing and
-state-estimation systems become unreliable and adapt early
-enough to continue navigating safely?
+Can an autonomous robot detect when its own sensing
+and state-estimation systems become unreliable and
+adapt early enough to maintain safe navigation?
 
 </p>
 
 </section>
 
+
 <footer>
+
 AURA · Sarthak Dubey · 2026
+
 </footer>
+
 
 </body>
 </html>
